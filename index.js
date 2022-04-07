@@ -34,6 +34,10 @@ app.use('/api/auth',authRouter)
 const userRouter = require('./routes/user.js')
 app.use('/api/user',userRouter)
 
+// router api sale food
+const saleFoodRouter = require('./routes/saleFood')
+app.use('/api/salefood',saleFoodRouter)
+
 const PORT =process.env.PORT
 
 app.listen(PORT,()=>console.log(`server running on port ${PORT}...`))
